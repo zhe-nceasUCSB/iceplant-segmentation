@@ -1,0 +1,21 @@
+name: naip-rgbir-2024
+band:
+  - 1
+  - 2
+  - 3
+  - 4
+data:
+  - [
+      "experiments/data/raster/2024NAIP_CojoTerrace_RGBIR.tif",
+      "experiments/data/raster/2024NAIP_CojoTerrace_RGBIR_labels.shp",
+      "experiments/data/raster/2024NAIP_CojoTerrace_RGBIR_grid.shp",
+    ]
+class_mapping:
+  Iceplant: 1
+  Mixed Iceplant: 1
+  Other Vegetation: 0
+  Others: 2
+  Tree: 0
+patch_size: 128
+stride: 32
+val_grid_ids: [49, 56] # The grid file has a "Index" field.

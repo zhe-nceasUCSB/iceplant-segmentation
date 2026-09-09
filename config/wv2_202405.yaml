@@ -1,0 +1,21 @@
+name: wv2-rgbir-202405
+band:
+  - 1
+  - 2
+  - 3
+  - 4
+data:
+  - [
+      "experiments/data/raster/wv2_2405_CojoTerrace_rendered.tif",
+      "experiments/data/raster/wv2_2405_CojoTerrace_rendered_labels.shp",
+      "experiments/data/raster/wv2_2405_CojoTerrace_rendered_grid.shp",
+    ]
+class_mapping:
+  Iceplant: 1
+  Mixed Iceplant: 1
+  Other Vegetation: 0
+  Others: 2
+  Tree: 0
+patch_size: 128
+stride: 32
+val_grid_ids: [49] # The grid file has a "Index" field.
