@@ -1,0 +1,7 @@
+# classification rasters are large (>100 MB) and are not tracked
+*.tif
+*.tif.aux.xml
+
+.ipynb_checkpoints/
+.DS_Store
+__pycache__/

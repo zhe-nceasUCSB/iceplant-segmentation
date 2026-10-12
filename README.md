@@ -150,6 +150,13 @@ described in [docs/prediction.md](docs/prediction.md).
 `run.sh` collects these commands as a worked example: train on one year,
 predict on another, train across sensors, fine-tune from a checkpoint.
 
+## 5. Accuracy assessment
+
+The accuracy and error-adjusted area estimates of the annual maps (2020, 2022,
+2023, 2024, 2025) are in [`accuracy_assessment/`](accuracy_assessment): the
+stratified random reference points, the sampling workflow and one notebook per
+year implementing the estimators of Olofsson et al. (2014).
+
 ## Repository layout
 
 | path | contents |
@@ -162,4 +169,5 @@ predict on another, train across sensors, fine-tune from a checkpoint.
 | `ssegm/models/` | architectures: U-Net with pluggable backbones, ViT segmentation head |
 | `run.sh` | example experiment scripts |
 | `docs/` | detailed documentation |
+| `accuracy_assessment/` | reference points, sampling and accuracy/area estimation notebooks |
 | `experiments/` | imagery, labels and training runs (not tracked by git) |
