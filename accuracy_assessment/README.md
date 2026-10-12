@@ -61,19 +61,6 @@ The accuracy notebooks only need the files in `data/`. The sampling notebook nee
 classification rasters (`{year}_rawmodel.tif`), which are not included because of their size; place
 them in `notebooks/` to run it.
 
-## Results
-
-Overall accuracy (OA), and user's (UA) and producer's (PA) accuracy and error-adjusted area of the
-iceplant class (± 95% confidence interval). Results for all classes are in `results/`.
-
-| Year | OA (%) | UA iceplant (%) | PA iceplant (%) | Iceplant area (ha) | Iceplant share (%) |
-|------|--------|-----------------|-----------------|--------------------|--------------------|
-| 2020 | 91.43 ± 2.19 | 95.33 ± 2.39 | 81.82 ± 5.13 | 287.8 ± 18.9 | 26.91 ± 1.77 |
-| 2022 | 94.63 ± 1.63 | 94.00 ± 2.69 | 84.64 ± 5.13 | 260.0 ± 16.9 | 24.29 ± 1.58 |
-| 2023 | 95.44 ± 1.86 | 97.67 ± 1.71 | 90.54 ± 5.11 | 222.1 ± 13.0 | 20.76 ± 1.22 |
-| 2024 | 93.48 ± 1.97 | 94.33 ± 2.62 | 82.94 ± 6.18 | 211.3 ± 16.5 | 19.76 ± 1.54 |
-| 2025 | 91.99 ± 2.09 | 97.33 ± 1.83 | 74.20 ± 5.44 | 295.3 ± 22.0 | 27.58 ± 2.05 |
-
 ## Notes
 
 - The sampling notebook draws points without a fixed random seed, so re-running it produces a new
